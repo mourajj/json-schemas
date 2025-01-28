@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "User",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the user"
+      },
+      "name": {
+        "type": "string",
+        "description": "Name of the user"
+      },
+      "email": {
+        "type": "string",
+        "format": "email",
+        "description": "Email address of the user"
+      },
+      "age": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "Age of the user"
+      }
+    },
+    "required": ["id", "name", "email"]
+}

@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Product",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the product"
+      },
+      "name": {
+        "type": "string",
+        "description": "Name of the product"
+      },
+      "price": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Price of the product"
+      },
+      "in_stock": {
+        "type": "boolean",
+        "description": "Availability of the product"
+      }
+    },
+    "required": ["id", "name", "price"]
+}  
